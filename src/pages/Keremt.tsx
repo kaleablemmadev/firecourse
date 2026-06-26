@@ -1,18 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Input from '../components/input';
-import Dropdown from '../components/Dropdown';
 import PDFViewer from '../components/PDFViewer';
 import BlueButton from '../components/BlueButton';
 import { submitToGoogleSheets, GOOGLE_SCRIPT_URL } from '../services/googleSheetsService';
 
 function Keremt() {
-  const year = `${new Date().getFullYear() - 8} ዓ.ም.`;
   const classNo = 1;
-  const summerTime = new Date().getMonth() >= 5 && new Date().getMonth() <= 8;
-  const autumnTime = new Date().getMonth() > 8 && new Date().getMonth() <= 11;
 
-  const [season, setSeason] = useState('ክረምት');
   const [classes, setClasses] = useState('ቀዳማይ');
   const [formData, setFormData] = useState({
     fullName: '',
@@ -25,14 +20,6 @@ function Keremt() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
-  const getSeason = () => {
-    if (summerTime) {
-      setSeason('የክረምት');
-    } else if (autumnTime) {
-      setSeason('የበጋ');
-    }
-  };
-
   const getClass = () => {
     if (classNo === 1) {
       setClasses('ቀዳማይ');
@@ -43,10 +30,6 @@ function Keremt() {
     } else if (classNo === 4) {
       setClasses('ራብዓይ');
     }
-  };
-
-  const handleSelect = (option: any) => {
-    setClasses(option.value);
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -90,7 +73,6 @@ function Keremt() {
   };
 
   useEffect(() => {
-    getSeason();
     getClass();
   }, []);
 
@@ -104,7 +86,7 @@ function Keremt() {
               2018 ዓ.ም. የክረምት ኮርስ ምዝገባ
             </h1>
             <p className="text-sm lg:text-base text-gray-600 font-amharic font-light mb-6">
-              በ{year} {season} ላይ የቤተ ክርስቲያን ትምህርትን ደብረ ይድራስ ቅዱስ ጊዮርጊስ ቤተ ክርስቲያን ተገኝተው መማር ለሚፈልጉ ሰዎች መመዝገቢያ ቅጽ
+              በ2018 ዓ.ም. ክረምት ላይ የቤተ ክርስቲያን ትምህርትን ደብረ ይድራስ ቅዱስ ጊዮርጊስ ቤተ ክርስቲያን ተገኝተው መማር ለሚፈልጉ ሰዎች መመዝገቢያ ቅጽ
             </p>
 
             <Input

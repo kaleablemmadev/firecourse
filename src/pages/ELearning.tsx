@@ -8,10 +8,7 @@ import { submitToGoogleSheets, GOOGLE_SCRIPT_URL } from '../services/googleSheet
 
 function ELearning() {
   const classNo = 1;
-  const summerTime = new Date().getMonth() >= 5 && new Date().getMonth() <= 8;
-  const autumnTime = new Date().getMonth() > 8 && new Date().getMonth() <= 11;
 
-  const [season, setSeason] = useState('ክረምት');
   const [classes, setClasses] = useState('ቀዳማይ');
   const [formData, setFormData] = useState({
     fullName: '',
@@ -21,14 +18,6 @@ function ELearning() {
     academic_level: '',
     address: ''
   });
-
-  const getSeason = () => {
-    if (summerTime) {
-      setSeason('የክረምት');
-    } else if (autumnTime) {
-      setSeason('የበጋ');
-    }
-  };
 
   const getClass = () => {
     if (classNo === 1) {
@@ -90,7 +79,6 @@ function ELearning() {
   };
 
   useEffect(() => {
-    getSeason();
     getClass();
   }, []);
 
