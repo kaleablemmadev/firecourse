@@ -15,7 +15,7 @@ const courseData = {
     path: '/keremt'
   },
   bega_distance: {
-    title: 'የበጋ የርቀት ትምህርት',
+    title: 'የተልእኮ መንፈሳዊ ትምህርት',
     description: 'በየሳምንቱ መገኘት የማይችሉ በወር አንዴ ተገኝተው እንዲማሩ የሚያስችል ኮርስ ነው። መስከረም/ጥቅምት ወር ውስጥ ይጀምራል።',
     path: '/bega-distance'
   },
@@ -57,7 +57,7 @@ function Home() {
               onClick={() => handleCourseSelect('keremt')}
             />
             <BlueButton
-              label="የበጋ የርቀት ትምህርት"
+              label="የተልእኮ መንፈሳዊ ትምህርት"
               onClick={() => handleCourseSelect('bega_distance')}
             />
             <BlueButton

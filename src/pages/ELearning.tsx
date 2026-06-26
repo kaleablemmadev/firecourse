@@ -205,9 +205,9 @@ function ELearning() {
         {/* RIGHT: PDF Viewer */}
         <div className="w-full lg:w-1/2">
           <PDFViewer
-            fileId="1BRzg5hQHsWJJUsiWr7VyeWapeDDwTdsr-S_Fhr4Dqjo"
-            downloadId="1jeUgOMWf3_Pv9AtIlvcl7t3jbCC-XUSx"
-            title={`የ${season} ኮርስ መግቢያ መረጃዎች`}
+            fileId="1rIISHFCmxffDtgiiJ0TBRZk6JMcbsgTQMSgmgLkuAto"
+            downloadId="1JRPcN4vQGpUsFBc2drUs1vOS3LcpQ2J3"
+            title={`የርቀት E-Learning ኮርስ መግቢያ መረጃዎች`}
           />
         </div>
       </div>

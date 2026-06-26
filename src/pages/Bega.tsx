@@ -205,9 +205,9 @@ function Bega() {
         {/* RIGHT: PDF Viewer */}
         <div className="w-full lg:w-1/2">
           <PDFViewer
-            fileId="1BRzg5hQHsWJJUsiWr7VyeWapeDDwTdsr-S_Fhr4Dqjo"
-            downloadId="1jeUgOMWf3_Pv9AtIlvcl7t3jbCC-XUSx"
-            title={`የ${season} ኮርስ መግቢያ መረጃዎች`}
+            fileId="1Q_OZd76fH9L6GERjsowWW3flzHyq74oGy6mmMfb10Mk"
+            downloadId="1M_RJk9di_BUTKX431Rks0AGQevUMLt5m"
+            title={`የበጋ መደበኛ ኮርስ መግቢያ መረጃዎች`}
           />
         </div>
       </div>

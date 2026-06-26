@@ -101,10 +101,10 @@ function BegaDistance() {
         <div className="w-full lg:w-1/2">
           <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 border border-orange-100">
             <h1 className="text-2xl lg:text-4xl text-gray-900 font-amharic font-bold mb-2">
-              የ2019 ዓ.ም. የበጋ የርቀት ኮርስ ምዝገባ
+              የ2019 ዓ.ም. የተልእኮ መንፈሳዊ ኮርስ ምዝገባ
             </h1>
             <p className="text-sm lg:text-base text-gray-600 font-amharic font-light mb-6">
-              በ2019 ዓ.ም. በጋ ላይ የቤተ ክርስቲያን ትምህርትን በርቀት መማር ለሚፈልጉ ሰዎች መመዝገቢያ ቅጽ
+              በ2019 ዓ.ም. በጋ ላይ የቤተ ክርስቲያን ትምህርትን በርቀት መማር ለሚፈልጉ ሰዎች የተልእኮ ኮርስ መመዝገቢያ ቅጽ
             </p>
 
             <Dropdown
@@ -205,9 +205,9 @@ function BegaDistance() {
         {/* RIGHT: PDF Viewer */}
         <div className="w-full lg:w-1/2">
           <PDFViewer
-            fileId="1BRzg5hQHsWJJUsiWr7VyeWapeDDwTdsr-S_Fhr4Dqjo"
-            downloadId="1jeUgOMWf3_Pv9AtIlvcl7t3jbCC-XUSx"
-            title={`የ${season} ኮርስ መግቢያ መረጃዎች`}
+            fileId="1OE3ustl5tZsOHrItTmrsjmBWvoNirUnxljGbpJDkDLE"
+            downloadId="1XrQEEt1RWbw7bW88XrYqGdBCq2sW4C6A"
+            title={`የተልእኮ መንፈሳዊ ትምህርት መግቢያ መረጃዎች`}
           />
         </div>
       </div>

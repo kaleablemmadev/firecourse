@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Input from '../components/input';
+import Dropdown from '../components/Dropdown';
 import PDFViewer from '../components/PDFViewer';
 import BlueButton from '../components/BlueButton';
 import { submitToGoogleSheets, GOOGLE_SCRIPT_URL } from '../services/googleSheetsService';
@@ -42,6 +43,10 @@ function Keremt() {
     } else if (classNo === 4) {
       setClasses('ራብዓይ');
     }
+  };
+
+  const handleSelect = (option: any) => {
+    setClasses(option.value);
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -188,8 +193,8 @@ function Keremt() {
         <div className="w-full lg:w-1/2">
           <PDFViewer
             fileId="1BRzg5hQHsWJJUsiWr7VyeWapeDDwTdsr-S_Fhr4Dqjo"
-            downloadId="1jeUgOMWf3_Pv9AtIlvcl7t3jbCC-XUSx"
-            title={`የ${season} ኮርስ መግቢያ መረጃዎች`}
+            downloadId="18fpU4TzOoKwdyarKTp8glnCcakrrtvZ8"
+            title={`የክረምት ኮርስ መግቢያ መረጃዎች`}
           />
         </div>
       </div>
