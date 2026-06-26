@@ -36,7 +36,7 @@ function Home() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen">
+    <div className="flex flex-col md:flex-row min-h-screen items-center">
       {/* LEFT SIDE: Buttons */}
       <div className="w-full md:w-3/4 flex items-center justify-center p-4 sm:p-8">
         <div className="flex flex-col text-center max-w-2xl w-full">
